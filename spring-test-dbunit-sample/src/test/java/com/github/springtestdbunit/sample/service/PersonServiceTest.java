@@ -59,11 +59,9 @@ public class PersonServiceTest {
     @Test
     @DatabaseSetup("sampleData.xml")
     @DatabaseSetup("ProductInitData.xml")
-//    @ExpectedDatabase(value = "expectedProductData.xml", assertionMode = DatabaseAssertionMode.NON_STRICT) // verify error!
-    @ExpectedDatabase(value = "ProductInitData.xml", assertionMode = DatabaseAssertionMode.NON_STRICT)
+    @ExpectedDatabase(value = "expectedProductData.xml", assertionMode = DatabaseAssertionMode.NON_STRICT) // verify error!
+//    @ExpectedDatabase(value = "ProductInitData.xml", assertionMode = DatabaseAssertionMode.NON_STRICT)
     @ExpectedDatabase(value = "sampleData.xml", assertionMode = DatabaseAssertionMode.NON_STRICT)
     public void testVerifyMultiTableValues() throws Exception {
-//        this.personService.remove(1);
-//        this.productService.remove(2);
     }
 }
